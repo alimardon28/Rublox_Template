@@ -183,6 +183,84 @@ a {
     color: rgb(154, 154, 154);
 }
 
+/* networks css */
+
+.networks-section {
+    padding-top: 120px;
+    margin: 0;
+}
+
+.networks {
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #CDD2FF;
+    padding: 20px;
+}
+
+.networks_left {
+    width: 25%;
+    padding: 20px;
+    border-right: 2px solid #cdcdcd;
+}
+
+.networks-list,
+.networks-right-list {
+    height: 500px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.networks-item {
+    margin-bottom: 10px;
+    border-top: 1px solid #cdcdcd;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.networks-item .active {
+    background-color: #606FFA;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px 25px;
+    width: 100%;
+}
+
+.networks-button {
+    text-align: start;
+}
+
+.networks_right {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.networks-right-top {
+    display: flex;
+    justify-content: end;
+    padding: 0px 27px;
+}
+
+
+.networks-right-top>p {
+    margin-left: 12px;
+    padding: 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.859);
+}
+
+.networks-right-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-top: 1px solid #cdcdcd;
+}
+
+.networks-right-items {
+    border: none;
+}
 
 
 @media screen and (max-width:1190px) {
@@ -240,7 +318,101 @@ a {
     .card-text {
         font-size: 10px !important;
     }
+
+    .networks {
+        padding: 8px;
+    }
+
+    .networks_left {
+        padding: 8px;
+    }
+
+    .networks-list,
+    .networks-right-list {
+        padding: 8px;
+    }
+
+    .networks-item {
+        padding: 8px;
+    }
+
+    .networks-title {
+        font-size: 14px !important;
+        font-weight: 100;
+    }
+
+    .networks-right-item {
+        padding: 8px;
+    }
+
+    .networke-right-title,
+    .networks-heading {
+        font-size: 13px !important;
+    }
+
+    .networks-desc,
+    .networks-span-elements {
+        font-size: 12px !important;
+    }
+
 }
+
+@media screen and (max-width:582px) {
+    .networks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .networks_left {
+        width: 100%;
+    }
+
+    .networks_right {
+        width: 100%;
+    }
+
+    .networks_left {
+        border: none;
+    }
+}
+
+
+@media screen and (max-width:501px) {
+    .networks-title {
+        font-size: 11px !important;
+        font-weight: 100;
+    }
+
+    .networke-right-title,
+    .networks-heading {
+        font-size: 10px !important;
+    }
+
+    .networks-desc,
+    .networks-span-elements {
+        font-size: 9px !important;
+    }
+
+}
+
+@media screen and (max-width:376px) {
+    .networks-title {
+        font-size: 9px !important;
+        font-weight: 100;
+    }
+
+    .networke-right-title,
+    .networks-heading {
+        font-size: 8px !important;
+    }
+
+    .networks-desc,
+    .networks-span-elements {
+        font-size: 8px !important;
+    }
+
+}
+
 
 
 @media screen and (max-width:533px) {
@@ -320,5 +492,17 @@ a {
 
 /* Handle */
 .networks-list::-webkit-scrollbar-thumb {
+    background: rgb(64, 64, 250);
+}
+
+.networks-right-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.networks-right-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(74, 74, 248);
+}
+
+.networks-right-list::-webkit-scrollbar-thumb {
     background: rgb(64, 64, 250);
 }
