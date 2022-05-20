@@ -262,6 +262,54 @@ a {
     border: none;
 }
 
+/* Companies css */
+
+.companies-section {
+    padding-top: 110px;
+}
+
+.companies-title {
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 102px;
+    text-align: center;
+    color: #323D64;
+    margin: 0;
+    padding: 0;
+}
+
+.companies-desc {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #A8A8A8;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.companies-list {
+    padding-top: 40px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.companies-item {
+    margin-top: 22px;
+}
+
+.companies-item+.companies-item {
+    margin-left: 23px;
+
+}
+
+.companies-item>img {
+    width: 98px;
+    height: 98px;
+    cursor: pointer;
+}
 
 @media screen and (max-width:1190px) {
     .platform-titles {
@@ -355,6 +403,16 @@ a {
         font-size: 12px !important;
     }
 
+
+    .companies-title {
+        font-size: 54px;
+        line-height: 70px;
+    }
+
+    .companies-desc {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 @media screen and (max-width:582px) {
@@ -375,44 +433,6 @@ a {
         border: none;
     }
 }
-
-
-@media screen and (max-width:501px) {
-    .networks-title {
-        font-size: 11px !important;
-        font-weight: 100;
-    }
-
-    .networke-right-title,
-    .networks-heading {
-        font-size: 10px !important;
-    }
-
-    .networks-desc,
-    .networks-span-elements {
-        font-size: 9px !important;
-    }
-
-}
-
-@media screen and (max-width:376px) {
-    .networks-title {
-        font-size: 9px !important;
-        font-weight: 100;
-    }
-
-    .networke-right-title,
-    .networks-heading {
-        font-size: 8px !important;
-    }
-
-    .networks-desc,
-    .networks-span-elements {
-        font-size: 8px !important;
-    }
-
-}
-
 
 
 @media screen and (max-width:533px) {
@@ -440,6 +460,24 @@ a {
         width: 164px;
         height: 164px;
     }
+}
+
+@media screen and (max-width:501px) {
+    .networks-title {
+        font-size: 11px !important;
+        font-weight: 100;
+    }
+
+    .networke-right-title,
+    .networks-heading {
+        font-size: 10px !important;
+    }
+
+    .networks-desc,
+    .networks-span-elements {
+        font-size: 9px !important;
+    }
+
 }
 
 @media screen and (max-width:426px) {
@@ -476,7 +514,49 @@ a {
         font-size: 11px;
     }
 
+    .companies-title {
+        font-size: 34px;
+        line-height: 50px;
+    }
+
+    .companies-desc {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .companies-item>img {
+        width: 78px;
+        height: 78px;
+    }
+
 }
+
+
+@media screen and (max-width:376px) {
+    .networks-title {
+        font-size: 9px !important;
+        font-weight: 100;
+    }
+
+    .networke-right-title,
+    .networks-heading {
+        font-size: 8px !important;
+    }
+
+    .networks-desc,
+    .networks-span-elements {
+        font-size: 8px !important;
+    }
+
+    .companies-item>img {
+        width: 58px;
+        height: 58px;
+    }
+
+}
+
+
+
 
 
 
