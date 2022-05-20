@@ -1,50 +1,324 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     margin-top: 93px;
     background-color: #F8F9FF !important;
+
+    display: flex;
+    flex-direction: column;
 }
 
-ul{
+ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.header{
+.header {
     position: fixed;
     margin: 0;
     top: 0%;
     left: 0;
     width: 100%;
     z-index: 99999 !important;
-    background-color:rgb(255, 255, 255) !important;
     box-shadow: 3px 3px 4px rgb(226, 226, 226);
+    backdrop-filter: blur(14px);
 }
 
-.header-item + .header-item{
-    margin-left:44px;
+.header-item+.header-item {
+    margin-left: 44px;
 }
 
-.headers-item + .headers-item{
+.headers-item+.headers-item {
     margin-left: 34px;
 }
 
-.header-link{
+.header-link {
     color: #323D64 !important;
     font-size: 18px !important;
 }
 
-.nav-item .active{
+.nav-item .active {
     color: #606FFA !important;
 }
 
-.nav-link{
-    cursor: pointer ;
+.nav-link {
+    cursor: pointer;
+}
+
+.inputs-box {
+    border: 1px solid #CDD2FF !important;
+}
+
+
+.inputd::placeholder {
+    font-size: 18px !important;
+}
+
+.inputi::placeholder {
+    font-size: 18px !important;
+}
+
+.inputt::placeholder {
+    font-size: 18px !important;
+}
+
+.inputsSpan {
+    border-right: 2px solid #CDD2FF;
+}
+
+/* PLATFORM CSS */
+.platform-section_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.platform-inputs {
+    padding-top: 100px;
+    width: 78%;
+}
+
+.platform-titles {
+    padding-top: 100px;
+    position: relative;
+}
+
+.platform-title-titles {
+    color: #323D64;
+    font-size: 106px;
+    line-height: 152px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin: 0;
+    padding: 0;
+}
+
+.platform-title-span {
+    color: #606FFA;
+}
+
+.platform-section-span {
+    padding-top: -10px !important;
+}
+
+.platform-titles-spans {
+    position: absolute;
+    right: 0;
+}
+
+.platform-titles-spans-right {
+    position: absolute;
+    right: 10%;
+}
+
+.platform-titles-spans-left {
+    position: absolute;
+    left: 10%;
+}
+
+/* ANALYTICAL CSS */
+
+.analytical-section {
+    padding-top: 120px;
+}
+
+.analytical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analytical-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.analytical-item {
+    border: 1px solid #CDD2FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.analytical-item+.analytical-item {
+    margin-left: 10px;
+}
+
+
+.analytical-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+#analytical-box-img {
+    border-radius: 30px;
+    width: 164px;
+    height: 164px;
+}
+
+.analytical-box-imgs {
+    border-radius: 30px;
+}
+
+.card-text {
+    font-size: 12px;
+    color: rgb(154, 154, 154);
+}
+
+
+
+@media screen and (max-width:1190px) {
+    .platform-titles {
+        padding-top: 60px;
+    }
+
+    .platform-title-titles {
+        font-size: 50px;
+        line-height: 100px;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .analytical-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .analytical-item {
+        margin-top: 20px;
+    }
+
+    .card-title {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .platform-titles {
+        padding-top: 40px;
+    }
+
+    .platform-section-span>img {
+        width: 50px !important;
+    }
+
+    .platform-titles-spans>img {
+        width: 50px !important;
+    }
+
+    .platform-titles-spans-right>img {
+        width: 50px !important;
+    }
+
+    .platform-titles-spans-left>img {
+        width: 50px !important;
+    }
+
+    .card-title {
+        font-size: 20px !important;
+    }
+
+    .card-text {
+        font-size: 10px !important;
+    }
+}
+
+
+@media screen and (max-width:533px) {
+    .analytical-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .analytical-item {
+        height: 164px;
+    }
+
+    .analytical-item+.analytical-item {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .analytical-box {
+        width: 100%;
+    }
+
+    #analytical-box-img {
+        width: 164px;
+        height: 164px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .platform-titles {
+        padding-top: 20px;
+    }
+
+    .platform-title-titles {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .platform-inputs {
+        padding-top: 70px;
+        width: 100%;
+    }
+
+    .inputs-box {
+        padding: 0 !important;
+    }
+
+    .inputs {
+        padding: 8px !important;
+        background-color: transparent;
+    }
+
+    .inputs-button {
+        padding: 5px !important;
+        margin: 0 !important;
+        font-size: 14px !important;
+    }
+
+    .inputs-button>span.bi-search {
+        font-size: 11px;
+    }
+
+}
+
+
+
+/* width */
+.networks-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+.networks-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(74, 74, 248);
+}
+
+/* Handle */
+.networks-list::-webkit-scrollbar-thumb {
+    background: rgb(64, 64, 250);
 }
